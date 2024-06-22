@@ -1,0 +1,9 @@
+import math
+
+def binomial_coefficient(n, k):
+    return math.factorial(n) // (math.factorial(k) * math.factorial(n - k))
+
+n = 5
+k = 2
+result = binomial_coefficient(n, k)
+print(f"The binomial coefficient of ({n}, {k}) is: {result}")
